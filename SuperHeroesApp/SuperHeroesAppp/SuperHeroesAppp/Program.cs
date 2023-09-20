@@ -1,8 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
-
-
-
+﻿
 var poderVolar = new SuperPoder();
 poderVolar.Nombre = "Volar";
 poderVolar.Descripcion = "Puede volar y plaenar en el aire";
@@ -28,6 +24,7 @@ List<SuperPoder> poderSuperman = new List<SuperPoder>(); //ESTO ES UN TIPO DE OB
 poderSuperman.Add(poderVolar);
 poderSuperman.Add(superFuerza);
 superman.SuperPoderes = poderSuperman;
+superman.UsarSuperPoderes();            //Aqui se esta llamando al metodo.
 
 
 //superman.SuperPoderes = new[] { "Rayos equis", "Volar", "Fuerza", "Rayos lazer" }; 
@@ -47,10 +44,19 @@ class SuperHeroe
         Id = 1;
         SuperPoderes = new List<SuperPoder>();
         PuedeVolar = false;
-
+        }
+    //Creación del metodo() dentro de la clase SuperHeroe{}
+    public void UsarSuperPoderes()
+    {
+        foreach (var item in SuperPoderes)
+        {
+            Console.WriteLine($"{Nombre} esta usando el super poder {item.Nombre}");                 //Signo $, string interpolation
 
         }
+    }
 }
+
+
 
 
 

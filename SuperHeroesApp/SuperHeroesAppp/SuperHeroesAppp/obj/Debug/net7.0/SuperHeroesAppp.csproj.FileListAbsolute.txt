@@ -2,3 +2,13 @@ C:\Users\mamartinez\Documents\Cursos\C#\SuperHeroesApp\SuperHeroesAppp\SuperHero
 C:\Users\mamartinez\Documents\Cursos\C#\SuperHeroesApp\SuperHeroesAppp\SuperHeroesAppp\obj\Debug\net7.0\SuperHeroesAppp.AssemblyInfoInputs.cache
 C:\Users\mamartinez\Documents\Cursos\C#\SuperHeroesApp\SuperHeroesAppp\SuperHeroesAppp\obj\Debug\net7.0\SuperHeroesAppp.AssemblyInfo.cs
 C:\Users\mamartinez\Documents\Cursos\C#\SuperHeroesApp\SuperHeroesAppp\SuperHeroesAppp\obj\Debug\net7.0\SuperHeroesAppp.csproj.CoreCompileInputs.cache
+C:\Users\mamartinez\Documents\Cursos\C#\SuperHeroesApp\SuperHeroesAppp\SuperHeroesAppp\bin\Debug\net7.0\SuperHeroesAppp.exe
+C:\Users\mamartinez\Documents\Cursos\C#\SuperHeroesApp\SuperHeroesAppp\SuperHeroesAppp\bin\Debug\net7.0\SuperHeroesAppp.deps.json
+C:\Users\mamartinez\Documents\Cursos\C#\SuperHeroesApp\SuperHeroesAppp\SuperHeroesAppp\bin\Debug\net7.0\SuperHeroesAppp.runtimeconfig.json
+C:\Users\mamartinez\Documents\Cursos\C#\SuperHeroesApp\SuperHeroesAppp\SuperHeroesAppp\bin\Debug\net7.0\SuperHeroesAppp.dll
+C:\Users\mamartinez\Documents\Cursos\C#\SuperHeroesApp\SuperHeroesAppp\SuperHeroesAppp\bin\Debug\net7.0\SuperHeroesAppp.pdb
+C:\Users\mamartinez\Documents\Cursos\C#\SuperHeroesApp\SuperHeroesAppp\SuperHeroesAppp\obj\Debug\net7.0\SuperHeroesAppp.dll
+C:\Users\mamartinez\Documents\Cursos\C#\SuperHeroesApp\SuperHeroesAppp\SuperHeroesAppp\obj\Debug\net7.0\refint\SuperHeroesAppp.dll
+C:\Users\mamartinez\Documents\Cursos\C#\SuperHeroesApp\SuperHeroesAppp\SuperHeroesAppp\obj\Debug\net7.0\SuperHeroesAppp.pdb
+C:\Users\mamartinez\Documents\Cursos\C#\SuperHeroesApp\SuperHeroesAppp\SuperHeroesAppp\obj\Debug\net7.0\SuperHeroesAppp.genruntimeconfig.cache
+C:\Users\mamartinez\Documents\Cursos\C#\SuperHeroesApp\SuperHeroesAppp\SuperHeroesAppp\obj\Debug\net7.0\ref\SuperHeroesAppp.dll
