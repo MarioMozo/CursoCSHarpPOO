@@ -1,5 +1,6 @@
 ﻿
-using System.Text;
+using SuperHeroesAppp.Models;
+using System.Text; 
 
 var poderVolar = new SuperPoder();
 poderVolar.Nombre = "Volar";
@@ -14,26 +15,18 @@ superFuerza.Nivel = NivelPoder.NivelTres;
 
 var superman = new SuperHeroe();
 superman.Id = 1;
-superman.Nombre = "Superman";
+superman.Nombre = "  Superman";
 superman.IdentidadSecreta = "Clark";
 superman.Ciudad = "Metropolis";
 superman.PuedeVolar = true;
 
 
-var superman2 = new SuperHeroe();
-superman.Id = 1;
-superman.Nombre = "Superman";
-superman.IdentidadSecreta = "Clark";
-superman.Ciudad = "Metropolis";
-superman.PuedeVolar = true;
-
-Console.WriteLine(superman == superman2);
-
+//Console.WriteLine(superman == superman2);   // Aqui compara externamente si son iguales, pero no los valores internos a diferencia de la funcion Record. 
 //Es otro metodo de crear propiedades  con la estructura Record
 SuperHeroeRecord superHeroeRecord = new SuperHeroeRecord(1, "Superman", "Clark Kent");
-SuperHeroeRecord superHeroeRecord2 = new SuperHeroeRecord(1, "Superman", "Clark Kent");
+//SuperHeroeRecord superHeroeRecord2 = new SuperHeroeRecord(1, "Superman", "Clark Kent");
 
-Console.WriteLine(superHeroeRecord2 == superHeroeRecord);
+//Console.WriteLine(superHeroeRecord2 == superHeroeRecord); //Indicará que si son iguales, ya que la estrucutra Record, lo revisa internamente a diferencia de la esctructura clasica 
 //Se crea un tipo de dato List en vez de un Array.
 //List<SuperPoder> poderSuperman = new List<SuperPoder>(); //ESTO ES UN TIPO DE OBJETO LISTA (COLEECIÓN DE ELEMENTOS)
 //poderSuperman.Add(poderVolar);
@@ -44,51 +37,7 @@ Console.WriteLine(superHeroeRecord2 == superHeroeRecord);
 
 //superman.SuperPoderes = new[] { "Rayos equis", "Volar", "Fuerza", "Rayos lazer" }; 
 
-class SuperHeroe
-{
-    public int Id;
-    public string Nombre;
-    public string IdentidadSecreta;
-    public string Ciudad;
-    public List<SuperPoder> SuperPoderes;  //TIPO DE DATO LIST<>
-    public bool PuedeVolar;
-    
-    //Este es el constructor de la clase. 
-    public SuperHeroe()
-        {
-        Id = 1;
-        SuperPoderes = new List<SuperPoder>();
-        PuedeVolar = false;
-        }
-    //Creación del metodo() dentro de la clase SuperHeroe{}
-    public string  UsarSuperPoderes()
-    {
-        StringBuilder concatenarStrings = new StringBuilder(); //Metodo de C# para concatenar cadenas 
-        foreach (var item in SuperPoderes)
-        {
-            //FORMA 1: Console.WriteLine($"{Nombre} esta usando el super poder {item.Nombre}");
-            concatenarStrings.AppendLine($"{Nombre} esta usando el super poder {item.Nombre}"); //AppendLine = Va concatenando el objeto  Signo $, string interpolation
-        }
-        return concatenarStrings.ToString();
-    }
-}
 
-
-
-
-
-class SuperPoder
-{
-    public string Nombre;
-    public string Descripcion;
-    public NivelPoder Nivel;  //Tipo de dato enum
-
-    //Constructor de la clase
-    public SuperPoder()
-    {
-        Nivel = NivelPoder.NivelUno;
-    }
-}
 
 //Enum: Enumeración de datos
 

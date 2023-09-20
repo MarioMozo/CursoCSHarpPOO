@@ -6,7 +6,18 @@ using System.Threading.Tasks;
 
 namespace SuperHeroesAppp.Models
 {
-    internal class SuperPoder
+
+    class SuperPoder
     {
+        public string Nombre;
+        public string Descripcion;
+        public NivelPoder Nivel;  //Tipo de dato enum
+
+        //Constructor de la clase
+        public SuperPoder()
+        {
+            Nivel = NivelPoder.NivelUno;
+        }
     }
+
 }
