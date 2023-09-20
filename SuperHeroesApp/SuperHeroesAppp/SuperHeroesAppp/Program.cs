@@ -22,8 +22,15 @@ superman.Id = 1;
 superman.Nombre = "Superman";
 superman.IdentidadSecreta = "Clark";
 superman.Ciudad = "Metropolis";
-superman.Vuela = true;
-superman.SuperPoderes = new[] { "Rayos equis", "Volar", "Fuerza", "Rayos lazer" }; 
+superman.PuedeVolar = true;
+//Se crea un tipo de dato List en vez de un Array.
+List<SuperPoder> poderSuperman = new List<SuperPoder>(); //ESTO ES UN TIPO DE OBJETO LISTA (COLEECIÓN DE ELEMENTOS)
+poderSuperman.Add(poderVolar);
+poderSuperman.Add(superFuerza);
+superman.SuperPoderes = poderSuperman;
+
+
+//superman.SuperPoderes = new[] { "Rayos equis", "Volar", "Fuerza", "Rayos lazer" }; 
 
 class SuperHeroe
 {
@@ -31,15 +38,33 @@ class SuperHeroe
     public string Nombre;
     public string IdentidadSecreta;
     public string Ciudad;
-    public List<SuperPoder> SuperPoderes;
-    public bool Vuela;
+    public List<SuperPoder> SuperPoderes;  //TIPO DE DATO LIST<>
+    public bool PuedeVolar;
+    
+    //Este es el constructor de la clase. 
+    public SuperHeroe()
+        {
+        Id = 1;
+        SuperPoderes = new List<SuperPoder>();
+        PuedeVolar = false;
+
+
+        }
 }
+
+
 
 class SuperPoder
 {
     public string Nombre;
     public string Descripcion;
     public NivelPoder Nivel;  //Tipo de dato enum
+
+    //Constructor de la clase
+    public SuperPoder()
+    {
+        Nivel = NivelPoder.NivelUno;
+    }
 }
 
 //Enum: Enumeración de datos
