@@ -1,0 +1,4 @@
+C:\Users\mamartinez\Documents\Cursos\C#\SuperHeroesApp\SuperHeroesAppp\SuperHeroesAppp\obj\Debug\net7.0\SuperHeroesAppp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mamartinez\Documents\Cursos\C#\SuperHeroesApp\SuperHeroesAppp\SuperHeroesAppp\obj\Debug\net7.0\SuperHeroesAppp.AssemblyInfoInputs.cache
+C:\Users\mamartinez\Documents\Cursos\C#\SuperHeroesApp\SuperHeroesAppp\SuperHeroesAppp\obj\Debug\net7.0\SuperHeroesAppp.AssemblyInfo.cs
+C:\Users\mamartinez\Documents\Cursos\C#\SuperHeroesApp\SuperHeroesAppp\SuperHeroesAppp\obj\Debug\net7.0\SuperHeroesAppp.csproj.CoreCompileInputs.cache
