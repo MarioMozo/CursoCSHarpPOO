@@ -1,4 +1,6 @@
 ﻿
+using System.Text;
+
 var poderVolar = new SuperPoder();
 poderVolar.Nombre = "Volar";
 poderVolar.Descripcion = "Puede volar y plaenar en el aire";
@@ -24,8 +26,8 @@ List<SuperPoder> poderSuperman = new List<SuperPoder>(); //ESTO ES UN TIPO DE OB
 poderSuperman.Add(poderVolar);
 poderSuperman.Add(superFuerza);
 superman.SuperPoderes = poderSuperman;
-superman.UsarSuperPoderes();            //Aqui se esta llamando al metodo.
-
+string resultSuperPoderes =  superman.UsarSuperPoderes();            //Aqui se esta llamando al metodo y se esta guardando en una variable.
+Console.WriteLine(resultSuperPoderes); //Se imprime la variabler 
 
 //superman.SuperPoderes = new[] { "Rayos equis", "Volar", "Fuerza", "Rayos lazer" }; 
 
@@ -46,13 +48,15 @@ class SuperHeroe
         PuedeVolar = false;
         }
     //Creación del metodo() dentro de la clase SuperHeroe{}
-    public void UsarSuperPoderes()
+    public string  UsarSuperPoderes()
     {
+        StringBuilder concatenarStrings = new StringBuilder(); //Metodo de C# para concatenar cadenas 
         foreach (var item in SuperPoderes)
         {
-            Console.WriteLine($"{Nombre} esta usando el super poder {item.Nombre}");                 //Signo $, string interpolation
-
+            //FORMA 1: Console.WriteLine($"{Nombre} esta usando el super poder {item.Nombre}");
+            concatenarStrings.AppendLine($"{Nombre} esta usando el super poder {item.Nombre}"); //AppendLine = Va concatenando el objeto  Signo $, string interpolation
         }
+        return concatenarStrings.ToString();
     }
 }
 
