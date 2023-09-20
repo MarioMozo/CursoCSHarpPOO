@@ -13,21 +13,34 @@ superFuerza.Nivel = NivelPoder.NivelTres;
 
 
 var superman = new SuperHeroe();
-
-
-
 superman.Id = 1;
 superman.Nombre = "Superman";
 superman.IdentidadSecreta = "Clark";
 superman.Ciudad = "Metropolis";
 superman.PuedeVolar = true;
+
+
+var superman2 = new SuperHeroe();
+superman.Id = 1;
+superman.Nombre = "Superman";
+superman.IdentidadSecreta = "Clark";
+superman.Ciudad = "Metropolis";
+superman.PuedeVolar = true;
+
+Console.WriteLine(superman == superman2);
+
+//Es otro metodo de crear propiedades  con la estructura Record
+SuperHeroeRecord superHeroeRecord = new SuperHeroeRecord(1, "Superman", "Clark Kent");
+SuperHeroeRecord superHeroeRecord2 = new SuperHeroeRecord(1, "Superman", "Clark Kent");
+
+Console.WriteLine(superHeroeRecord2 == superHeroeRecord);
 //Se crea un tipo de dato List en vez de un Array.
-List<SuperPoder> poderSuperman = new List<SuperPoder>(); //ESTO ES UN TIPO DE OBJETO LISTA (COLEECIÓN DE ELEMENTOS)
-poderSuperman.Add(poderVolar);
-poderSuperman.Add(superFuerza);
-superman.SuperPoderes = poderSuperman;
-string resultSuperPoderes =  superman.UsarSuperPoderes();            //Aqui se esta llamando al metodo y se esta guardando en una variable.
-Console.WriteLine(resultSuperPoderes); //Se imprime la variabler 
+//List<SuperPoder> poderSuperman = new List<SuperPoder>(); //ESTO ES UN TIPO DE OBJETO LISTA (COLEECIÓN DE ELEMENTOS)
+//poderSuperman.Add(poderVolar);
+//poderSuperman.Add(superFuerza);
+//superman.SuperPoderes = poderSuperman;
+//string resultSuperPoderes =  superman.UsarSuperPoderes();            //Aqui se esta llamando al metodo y se esta guardando en una variable.
+//Console.WriteLine(resultSuperPoderes); //Se imprime la variable
 
 //superman.SuperPoderes = new[] { "Rayos equis", "Volar", "Fuerza", "Rayos lazer" }; 
 
@@ -85,3 +98,5 @@ enum NivelPoder
     NivelDos,
     NivelTres,
 }
+
+public record SuperHeroeRecord(int Id, string Nombre, string IdentidadSecreta);
