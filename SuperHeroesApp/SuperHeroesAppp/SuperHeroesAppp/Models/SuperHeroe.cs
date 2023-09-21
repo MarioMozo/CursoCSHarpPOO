@@ -9,12 +9,12 @@ namespace SuperHeroesAppp.Models
     class SuperHeroe
     {
         private string _Nombre;
-        public int Id;
+        public int Id = 1;
         public string Nombre
         {
             get { return _Nombre; }
             set { _Nombre = value.Trim(); }     //Esto hace que limpie espacios en blanco de una cadena  
-        } 
+        }
 
         public string NombreEIdentidadSecreta
         {
@@ -45,7 +45,7 @@ namespace SuperHeroesAppp.Models
             foreach (var item in SuperPoderes)
             {
                 //FORMA 1: Console.WriteLine($"{Nombre} esta usando el super poder {item.Nombre}");
-                concatenarStrings.AppendLine($"{Nombre} esta usando el super poder {item.Nombre}"); //AppendLine = Va concatenando el objeto  Signo $, string interpolation
+                concatenarStrings.AppendLine($"{IdentidadSecreta} esta usando el super poder {item.Nombre}"); //AppendLine = Va concatenando el objeto  Signo $, string interpolation
             }
             return concatenarStrings.ToString();
         }
