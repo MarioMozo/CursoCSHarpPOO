@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace SuperHeroesAppp.Models
 {
-    class SuperHeroe
+    class SuperHeroe : Heroe
     {
         private string _Nombre;
         public int Id = 1;
-        public string Nombre
+        public override  string Nombre
         {
             get { return _Nombre; }
             set { _Nombre = value.Trim(); }     //Esto hace que limpie espacios en blanco de una cadena  
@@ -48,6 +48,11 @@ namespace SuperHeroesAppp.Models
                 concatenarStrings.AppendLine($"{IdentidadSecreta} esta usando el super poder {item.Nombre}"); //AppendLine = Va concatenando el objeto  Signo $, string interpolation
             }
             return concatenarStrings.ToString();
+        }
+
+        public override string SalvarMundo()
+        {
+            return $"{Nombre} ha salvado el mundo";
         }
     }
 

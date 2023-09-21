@@ -24,6 +24,17 @@ superman.IdentidadSecreta = "Clark";
 superman.Ciudad = "Metropolis";
 superman.PuedeVolar = true;
 
+List<SuperPoder> poderesSuperman = new List<SuperPoder>();
+poderesSuperman.Add(poderVolar);
+poderesSuperman.Add(superFuerza);
+superman.SuperPoderes = poderesSuperman;
+string resultSuperPoderes = superman.UsarSuperPoderes();
+Console.WriteLine(resultSuperPoderes);
+string salvarMundo = superman.SalvarMundo();
+Console.WriteLine(salvarMundo);
+string savlarTierra = superman.SalvarTierra();
+Console.WriteLine(savlarTierra);
+
 
 
 var wolverine = new Antiheroe();
