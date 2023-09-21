@@ -54,6 +54,12 @@ namespace SuperHeroesAppp.Models
         {
             return $"{Nombre} ha salvado el mundo";
         }
+
+        public override string SalvarTierra()
+        {
+            //return base.SalvarTierra();
+            return $"{NombreEIdentidadSecreta} ha salvado la tierra";
+        }
     }
 
 }
