@@ -10,7 +10,7 @@ namespace SuperHeroesAppp
     {
         public abstract string Nombre { get; set; }
         public abstract string SalvarMundo();
-        public string SalvarTierra()
+        public virtual string SalvarTierra()
         {
             return $"{Nombre} ha salvado la tierra";
         }

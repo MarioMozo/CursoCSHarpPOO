@@ -1,7 +1,10 @@
 ﻿
 using SuperHeroesAppp;
 using SuperHeroesAppp.Models;
+using SuperHeroesAppps;
 using System.Text; 
+
+var imprimirInformacion = new ImprimirInformacion();
 
 var poderVolar = new SuperPoder();
 poderVolar.Nombre = "Volar";
@@ -24,6 +27,9 @@ superman.IdentidadSecreta = "Clark";
 superman.Ciudad = "Metropolis";
 superman.PuedeVolar = true;
 
+imprimirInformacion.ImprimirSuperHeroe(superman);
+
+
 List<SuperPoder> poderesSuperman = new List<SuperPoder>();
 poderesSuperman.Add(poderVolar);
 poderesSuperman.Add(superFuerza);
@@ -42,6 +48,8 @@ wolverine.Id = 2;
 wolverine.Nombre = "Wolverine";
 wolverine.IdentidadSecreta = "Logan";
 wolverine.PuedeVolar = false;
+
+imprimirInformacion.ImprimirSuperHeroe(wolverine);
 
 List<SuperPoder> poderesWolverine = new List<SuperPoder>();
 poderesWolverine.Add(poderVolar);
